@@ -45,7 +45,7 @@ const Tag = styled.div`
 `
 
 function Balance({ balance }: { balance: CurrencyAmount }) {
-  return <StyledBalanceText color="card" title={balance.toExact()}>{balance.toSignificant(4)}</StyledBalanceText>
+  return <StyledBalanceText color="white" title={balance.toExact()}>{balance.toSignificant(4)}</StyledBalanceText>
 }
 
 const TagContainer = styled.div`

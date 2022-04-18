@@ -56,7 +56,7 @@ const HeaderRow = styled.div`
 `
 
 const ContentWrapper = styled.div`
-  background-color: ${({ theme }) => theme.colors.invertedContrast};
+  background-color: ${({ theme }) => theme.colors.card};
   padding: 2rem;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -296,7 +296,7 @@ export default function WalletModal({
           <ContentWrapper>
             {error instanceof UnsupportedChainIdError ? (
               <h5>
-                Please connect to the appropriate ICICB Chain network.
+                Please connect to the appropriate BSC Chain network.
                 <a href="https://docs.binance.org/smart-chain/wallet/metamask.html">How?</a>
               </h5>
             ) : (
@@ -351,7 +351,7 @@ export default function WalletModal({
           )}
           {walletView !== WALLET_VIEWS.PENDING && (
             <Blurb>
-              <span>New to ICICB? &nbsp;</span>{' '}
+              <span>New to BSC? &nbsp;</span>{' '}
               <ExternalLink href="https://docs.binance.org/smart-chain/wallet/metamask.html">
                 Learn more about wallets
               </ExternalLink>

@@ -1,3 +1,3 @@
-# ICICB DEX Exchange
+# Babylon DEX Exchange
 
-[IcicbDEX](https://dex.icicbchain.com/) is an automated market maker (“**AMM**”) that allows two tokens to be exchanged on the [ICICB Chain](https://www.icicbchain.com) (ICICB). It is fast, cheap, and allows anyone to participate.
+[BabylonDEX](https://dex.Babylonchain.com/) is an automated market maker (“**AMM**”) that allows two tokens to be exchanged on the [Babylon Chain](https://www.Babylonchain.com) (Babylon). It is fast, cheap, and allows anyone to participate.

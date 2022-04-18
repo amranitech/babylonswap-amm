@@ -18,7 +18,7 @@ function TradeSummary({ trade, allowedSlippage }: { trade: Trade; allowedSlippag
 
   return (
     <Card>
-      <CardBody style = {{backgroundColor:"white"}}>
+      <CardBody style = {{backgroundColor:"#090805"}}>
         <RowBetween>
           <RowFixed>
             <Text fontSize="14px">{isExactIn ? 'Minimum received' : 'Maximum sold'}</Text>

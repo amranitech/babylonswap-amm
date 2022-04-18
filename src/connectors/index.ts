@@ -54,7 +54,7 @@ export const portis = new PortisConnector({
 // mainnet only
 export const walletlink = new WalletLinkConnector({
   url: NETWORK_URL,
-  appName: 'ICICB DEX',
+  appName: 'Babylon swap',
   appLogoUrl:
-    'https://icicb-group.com/assets/imgasset/group-logo.png',
+    'https://res.cloudinary.com/galaxy-digital/image/upload/v1650218804/icicbmetaverse/moagocnxmo8xw26aeemx.png',
 })

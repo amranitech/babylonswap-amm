@@ -540,14 +540,14 @@ export default function RemoveLiquidity({
                               to={`/remove/${currencyA === ETHER ? WETH[chainId].address : currencyIdA}/${currencyB === ETHER ? WETH[chainId].address : currencyIdB
                                 }`}
                             >
-                              Receive WICICB
+                              Receive WBNB
                             </StyledInternalLink>
                           ) : oneCurrencyIsWETH ? (
                             <StyledInternalLink
                               to={`/remove/${currencyA && currencyEquals(currencyA, WETH[chainId]) ? 'ETH' : currencyIdA
                                 }/${currencyB && currencyEquals(currencyB, WETH[chainId]) ? 'ETH' : currencyIdB}`}
                             >
-                              Receive ICICB
+                              Receive BNB
                             </StyledInternalLink>
                           ) : null}
                         </RowBetween>

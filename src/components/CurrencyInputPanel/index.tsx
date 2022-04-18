@@ -31,7 +31,8 @@ const CurrencySelect = styled.button<{ selected: boolean }>`
   cursor: pointer;
   user-select: none;
   border: none;
-  padding: 0 0.5rem;
+  padding: 0.4rem;
+  border-radius:20px;
 
   :focus,
   :hover {

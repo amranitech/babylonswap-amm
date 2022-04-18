@@ -18,7 +18,8 @@ export function isAddress(value: any): string | false {
 }
 
 const ETHERSCAN_PREFIXES: { [chainId in ChainId]: any } = {
-  26: process.env.REACT_APP_EXPLORER_MAIN
+  56: process.env.REACT_APP_EXPLORER_MAIN,
+  97: process.env.REACT_APP_EXPLORER_MAIN
 }
 
 export function getEtherscanLink(chainId: ChainId, data: string, type: 'transaction' | 'token' | 'address'): string {
