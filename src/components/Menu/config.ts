@@ -21,21 +21,21 @@ const config: MenuEntry[] = [
       }
     ]
   },
-  // {
-  //   label: 'Farms',
-  //   icon: 'FarmIcon',
-  //   href: 'https://www.goosedefi.com/farms'
-  // },
-  // {
-  //   label: 'Nests',
-  //   icon: 'PoolIcon',
-  //   href: 'https://www.goosedefi.com/nests'
-  // },
-  // // {
-  // //   label: 'Lottery',
-  // //   icon: 'TicketIcon',
-  // //   href: 'https://www.goosedefi.com/lottery'
-  // // },
+  {
+    label: 'Mining bank',
+    icon: 'FarmIcon',
+    href: '/MiningBank'
+  },
+  {
+    label: 'Evengalist',
+    icon: 'PoolIcon',
+    href: '/Evengalist'
+  },
+  {
+    label: 'Lottery',
+    icon: 'TicketIcon',
+    href: '/Loulette'
+  },
   // {
   //   label: 'Info',
   //   icon: 'InfoIcon',

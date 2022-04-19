@@ -17,6 +17,9 @@ import PoolFinder from './PoolFinder'
 import RemoveLiquidity from './RemoveLiquidity'
 import { RedirectOldRemoveLiquidityPathStructure } from './RemoveLiquidity/redirects'
 import Swap from './Swap'
+import MiningBank from './MiningBank'
+import Evengalist from './Evengalist'
+import Loulette from './Loulette'
 import { RedirectPathToSwapOnly, RedirectToSwap } from './Swap/redirects'
 import { EN, allLanguages } from '../constants/localisation/languageCodes'
 import { LanguageContext } from '../hooks/LanguageContext'
@@ -132,6 +135,9 @@ export default function App() {
                       <Route exact strict path='/remove/v1/:address' component={RemoveV1Exchange} />
                       <Route exact strict path='/remove/:tokens' component={RedirectOldRemoveLiquidityPathStructure} />
                       <Route exact strict path='/remove/:currencyIdA/:currencyIdB' component={RemoveLiquidity} />
+                      <Route exact path="/MiningBank" component={MiningBank} />
+                      <Route exact path="/Evengalist" component={Evengalist} />
+                      <Route exact path="/Loulette" component={Loulette} />
                       <Route component={RedirectPathToSwapOnly} />
                     </Switch>
                   </Web3ReactManager>
