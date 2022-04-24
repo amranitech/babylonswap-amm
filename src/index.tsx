@@ -22,14 +22,14 @@ window.addEventListener('error', () => {
 ReactDOM.render(
   <StrictMode>
     <Providers>
+      <ResetCSS />
+      <GlobalStyle />
       <>
         <ListsUpdater />
         <ApplicationUpdater />
         <TransactionUpdater />
         <MulticallUpdater />
       </>
-      <ResetCSS />
-      <GlobalStyle />
       <App />
     </Providers>
   </StrictMode>,

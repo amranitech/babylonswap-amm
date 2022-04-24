@@ -10,6 +10,14 @@ const MainLoulette = styled.div`
     z-index: 5;
     border-radius: 20px;
     border:1px solid #D0B49F;
+    
+    @media (max-width: 840px) {
+        min-width:400px;
+    }
+    @media (max-width: 540px) {
+        min-width:350px;
+    }
+
 `
 const Game = styled.div`
     justify-content: center;
@@ -17,6 +25,9 @@ const Game = styled.div`
     align-items: center;
     display:flex;
     position:relative;
+    @media (max-width: 840px) {
+        flex-direction:column;
+    }
 `
 
 const Wheal = styled.div`
@@ -51,6 +62,10 @@ const Button = styled.button`
       background-color:white;
       color:#090805;
   }
+    @media (max-width: 840px) {
+        margin:auto;
+        margin-top:15px;
+    }
 `
 const Direction = styled.div`
   position:absolute;

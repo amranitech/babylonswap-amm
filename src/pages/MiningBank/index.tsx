@@ -49,9 +49,13 @@ const ListView = styled.div`
 `
 const Item = styled.div`
   width:100%;
-  border:1px solid #D0B49F;
+  border:1px solid #83838359;
+  cursor:pointer;
   padding:12px;
   display:flex;
+  &:hover{
+      background-color:#83838359;
+  }
 `
 
 const ClaimButton = styled.button`
