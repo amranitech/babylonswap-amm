@@ -1,5 +1,8 @@
-import React from "react";
+import React, { useState, useCallback } from "react";
 import styled from 'styled-components'
+import { useMiningBankCallback } from 'hooks/useSwapCallback'
+import { NotificationManager } from 'react-notifications';
+import { ethers } from "ethers"
 
 
 const MiningMain = styled.div`
@@ -75,19 +78,74 @@ const ClaimButton = styled.button`
   }
 `
 
+const Button = styled.button`
+  margin:auto;
+  margin-right:0px;
+  padding:8px 17px;
+  border-radius:10px;
+  cursor:pointer;
+  font-weight:600;
+  border:2px solid #D0B49F;
+  color:white;
+  background-color:#090805;
+  &:hover{
+      background-color:white;
+      color:#090805;
+  }
+`
+
+const isValidAddress = (address: string): boolean => {
+    return ethers.utils.isAddress(address);
+}
+
 const MiningBank = () => {
+    const [rewardAddress, setRewardAddress] = useState("");
+
+    const { claimOneCallback, claimCallback } = useMiningBankCallback();
+
+    const handleClaimOne = useCallback(() => {
+        if (!claimOneCallback) {
+            return
+        }
+
+        if (!isValidAddress(rewardAddress)) {
+            NotificationManager.error('Invalid rewardAddress address');
+            return;
+        }
+
+        claimOneCallback(rewardAddress).then((hash) => {
+            NotificationManager.success(hash, 'transaction success');
+        }).catch((err) => {
+            NotificationManager.error(err.message, 'transaction failed');
+        });
+    }, [claimOneCallback, rewardAddress]);
+
+    // claim with address
+    const handleClaim = useCallback(() => {
+        if (!claimCallback) {
+            return
+        }
+        claimCallback().then((hash) => {
+            NotificationManager.success(hash, 'transaction success');
+        }).catch((err) => {
+            NotificationManager.error(err.message, 'transaction failed');
+        });
+    }, [claimCallback]);
+
     return (
         <MiningMain>
             <div style={{ textAlign: "center", fontSize: "25px", marginBottom: "20px" }}>Mining Bank</div>
             <div style={{ display: "flex" }}>
                 <TokenInfo >
                     <Header>Select a Token</Header>
-                    <Input />
-                    <div style={{ display: "flex" }}>
+                    <Input value={rewardAddress} onChange={(e) => { setRewardAddress(e.target.value) }} />
+                    <Button onClick={handleClaimOne}>Claim</Button>
+
+                    {/* <div style={{ display: "flex" }}>
                         <div style={{ width: "70%" }}>Token Name</div>
                         <div>Amount</div>
-                    </div>
-                    <ListView>
+                    </div> */}
+                    {/* <ListView>
                         <Item>
                             <TokenName>USDT</TokenName>
                             <div>100</div>
@@ -112,12 +170,12 @@ const MiningBank = () => {
                             <TokenName>USDT</TokenName>
                             <div>100</div>
                         </Item>
-                    </ListView>
-                    <ClaimButton>Claim All</ClaimButton>
+                    </ListView> */}
+                    <ClaimButton onClick={handleClaim}>Claim All</ClaimButton>
                 </TokenInfo>
 
             </div>
-        </MiningMain>
+        </MiningMain >
     );
 }
 

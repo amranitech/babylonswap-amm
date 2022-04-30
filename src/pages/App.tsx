@@ -137,7 +137,7 @@ export default function App() {
                       <Route exact strict path='/remove/:currencyIdA/:currencyIdB' component={RemoveLiquidity} />
                       <Route exact path="/MiningBank" component={MiningBank} />
                       <Route exact path="/Evengalist" component={Evengalist} />
-                      <Route exact path="/Loulette" component={Loulette} />
+                      {/* <Route exact path="/Loulette" component={Loulette} /> */}
                       <Route component={RedirectPathToSwapOnly} />
                     </Switch>
                   </Web3ReactManager>

@@ -10,6 +10,8 @@ import TransactionUpdater from './state/transactions/updater'
 import Providers from './Providers'
 import 'inter-ui'
 import './i18n'
+import 'react-notifications/lib/notifications.css';
+import { NotificationContainer } from 'react-notifications';
 
 if ('ethereum' in window) {
   (window.ethereum as any).autoRefreshOnNetworkChange = false
@@ -29,6 +31,7 @@ ReactDOM.render(
         <ApplicationUpdater />
         <TransactionUpdater />
         <MulticallUpdater />
+        <NotificationContainer />
       </>
       <App />
     </Providers>

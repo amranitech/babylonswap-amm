@@ -24,7 +24,7 @@ const config: MenuEntry[] = [
   {
     label: 'Farming',
     icon: 'FarmIcon',
-    href: 'http://localhost:3001/farms'
+    href: 'http://localhost:3002/farms'
   },
   {
     label: 'Mining bank',
@@ -36,11 +36,11 @@ const config: MenuEntry[] = [
     icon: 'PoolIcon',
     href: '/Evengalist'
   },
-  {
-    label: 'Lottery',
-    icon: 'TicketIcon',
-    href: '/Loulette'
-  },
+  // {
+  //   label: 'Roulette',
+  //   icon: 'TicketIcon',
+  //   href: '/Roulette'
+  // },
   // {
   //   label: 'Info',
   //   icon: 'InfoIcon',

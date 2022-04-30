@@ -5,7 +5,7 @@ import { useMemo } from 'react'
 import { BIPS_BASE, DEFAULT_DEADLINE_FROM_NOW, INITIAL_ALLOWED_SLIPPAGE } from '../constants'
 import { getTradeVersion, useV1TradeExchangeAddress } from '../data/V1'
 import { useTransactionAdder } from '../state/transactions/hooks'
-import { calculateGasMargin, getRouterContract, isAddress, shortenAddress } from '../utils'
+import { calculateGasMargin, getEvangelistContract, getRouletteContract, getMiningBankContract, getRouterContract, isAddress, shortenAddress } from '../utils'
 import isZero from '../utils/isZero'
 import v1SwapArguments from '../utils/v1SwapArguments'
 import { useActiveWeb3React } from './index'
@@ -224,4 +224,78 @@ export function useSwapCallback(
       error: null,
     }
   }, [trade, library, account, chainId, recipient, recipientAddressOrName, swapCalls, addTransaction])
+}
+
+export function useRouletteCallback(): { playCallback: null | (() => Promise<string>), claimCallback: null | (() => Promise<string>) } {
+  const { library, account } = useActiveWeb3React();
+
+  return useMemo(() => {
+    if (!library || !account) return { playCallback: null, claimCallback: null };
+    return {
+      playCallback: async function onSwap(): Promise<string> {
+        const contract: Contract | null =
+          getRouletteContract(library, account);
+        return contract.spin().then((response: any) => {
+          return response.hash
+        });
+      },
+      claimCallback: async function onSwap(): Promise<string> {
+        const contract: Contract | null =
+          getRouletteContract(library, account);
+        return contract.claim().then((response: any) => {
+          return response.hash
+        });
+      }
+    }
+  }, [library, account])
+}
+
+export function useEvangelistCallback(): { submitCallback: null | ((referral) => Promise<string>), claimCallback: null | ((rewardAddresses) => Promise<string>) } {
+  const { library, account } = useActiveWeb3React();
+
+  return useMemo(() => {
+    if (!library || !account) return { submitCallback: null, claimCallback: null };
+    return {
+      submitCallback: async function onSwap(referral): Promise<string> {
+        const contract: Contract | null =
+          getEvangelistContract(library, account);
+        return contract.setEvangalist(referral).then((response: any) => {
+          console.log("response", response)
+          return response.hash
+        });
+      },
+      claimCallback: async function onSwap(rewardAddresses): Promise<string> {
+        const contract: Contract | null =
+          getEvangelistContract(library, account);
+        return contract.claim(rewardAddresses).then((response: any) => {
+          return response.hash
+        });
+      }
+    }
+  }, [library, account])
+}
+
+export function useMiningBankCallback(): { claimOneCallback: null | ((token) => Promise<string>), claimCallback: null | (() => Promise<string>) } {
+  const { library, account } = useActiveWeb3React();
+
+  return useMemo(() => {
+    if (!library || !account) return { claimOneCallback: null, claimCallback: null };
+    return {
+      claimOneCallback: async function onSwap(token): Promise<string> {
+        const contract: Contract | null =
+          getMiningBankContract(library, account);
+        return contract.claim(token, account).then((response: any) => {
+          console.log("response", response)
+          return response.hash
+        });
+      },
+      claimCallback: async function onSwap(): Promise<string> {
+        const contract: Contract | null =
+          getMiningBankContract(library, account);
+        return contract.claimAll(account).then((response: any) => {
+          return response.hash
+        });
+      }
+    }
+  }, [library, account])
 }

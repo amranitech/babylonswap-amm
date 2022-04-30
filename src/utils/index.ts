@@ -5,8 +5,11 @@ import { JsonRpcSigner, Web3Provider } from '@ethersproject/providers'
 import { BigNumber } from '@ethersproject/bignumber'
 import { abi as IUniswapV2Router02ABI } from '@uniswap/v2-periphery/build/IUniswapV2Router02.json'
 import { ChainId, JSBI, Percent, Token, CurrencyAmount, Currency, ETHER } from '@pancakeswap-libs/sdk'
-import { ROUTER_ADDRESS } from '../constants'
+import {
+  ROUTER_ADDRESS, EVANGALIST_ADDRESS, ROULETTE_ADDRESS, MINEBANK_ADDRESS
+} from '../constants'
 import { TokenAddressMap } from '../state/lists/hooks'
+import Abis from '../constants/abis/abis.json'
 
 // returns the checksummed address if the address is valid, otherwise returns false
 export function isAddress(value: any): string | false {
@@ -90,6 +93,21 @@ export function getContract(address: string, ABI: any, library: Web3Provider, ac
 // account is optional
 export function getRouterContract(_: number, library: Web3Provider, account?: string): Contract {
   return getContract(ROUTER_ADDRESS, IUniswapV2Router02ABI, library, account)
+}
+
+// account is optional
+export function getEvangelistContract(library: Web3Provider, account?: string): Contract {
+  return getContract(EVANGALIST_ADDRESS, Abis.evangelist, library, account)
+}
+
+// account is optional
+export function getRouletteContract(library: Web3Provider, account?: string): Contract {
+  return getContract(ROULETTE_ADDRESS, Abis.roulette, library, account)
+}
+
+// account is optional
+export function getMiningBankContract(library: Web3Provider, account?: string): Contract {
+  return getContract(MINEBANK_ADDRESS, Abis.babylonMineBank, library, account)
 }
 
 export function escapeRegExp(string: string): string {

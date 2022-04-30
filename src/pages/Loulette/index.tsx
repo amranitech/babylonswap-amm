@@ -1,5 +1,8 @@
-import React from "react";
+import React, { useCallback } from "react";
 import styled from 'styled-components'
+
+import { useRouletteCallback } from 'hooks/useSwapCallback'
+import { NotificationManager } from 'react-notifications';
 
 const MainLoulette = styled.div`
     padding:50px 50px;
@@ -73,15 +76,40 @@ const Direction = styled.div`
 `
 
 const Loulette = () => {
+
+    const { playCallback, claimCallback } = useRouletteCallback();
+
+    const handlePlay = useCallback(() => {
+        if (!playCallback) {
+            return
+        }
+        playCallback().then((hash) => {
+            NotificationManager.success('transaction success');
+        }).catch((err) => {
+            NotificationManager.error(err.message, 'transaction failed');
+        });
+    }, [playCallback]);
+
+    const handleClaim = useCallback(() => {
+        if (!claimCallback) {
+            return
+        }
+        claimCallback().then((hash) => {
+            NotificationManager.success('transaction success');
+        }).catch((err) => {
+            NotificationManager.error(err.message, 'transaction failed');
+        });
+    }, [claimCallback]);
+
     return (
         <MainLoulette>
             <Game>
                 <Wheal />
-                <Button >Play</Button>
+                <Button onClick={handlePlay}>Play</Button>
             </Game>
             <Game>
                 <div>Reward Amount</div>
-                <Button>Claim All</Button>
+                <Button onClick={handleClaim}>Claim All</Button>
             </Game>
         </MainLoulette>
     );
