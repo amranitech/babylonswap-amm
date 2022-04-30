@@ -24,7 +24,7 @@ const config: MenuEntry[] = [
   {
     label: 'Farming',
     icon: 'FarmIcon',
-    href: 'http://localhost:3002/farms'
+    href: 'http://localhost:3001/farms'
   },
   {
     label: 'Mining bank',
