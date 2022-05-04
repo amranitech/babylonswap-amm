@@ -5,7 +5,7 @@ import { injected, walletconnect } from '../connectors'
 // TODO
 export const ROUTER_ADDRESS = '0xc18a46068EeeD3D53AfcA61B309f179BEE435118'
 export const EVANGALIST_ADDRESS = '0x98AfadCD618cB31664fa70F900ae3255eEc5B167'
-export const ROULETTE_ADDRESS = '0xf06CB69c4642203D9DAf01232f3222945768417c'
+export const ROULETTE_ADDRESS = '0xD52DE622916462e64112bf703Dc5179Bba5Db4Df'
 export const MINEBANK_ADDRESS = '0xf6b25a4F06e03e3d9DbE7aA3CB31B9840127B4F6'
 
 // a list of tokens by chain
@@ -56,7 +56,7 @@ export const BASES_TO_TRACK_LIQUIDITY_FOR: ChainTokenList = {
 export const PINNED_PAIRS: { readonly [chainId in ChainId]?: [Token, Token][] } = {
   [ChainId.MAINNET]: [
     [
-      new Token(ChainId.MAINNET, '0x6Cce1fef6247b722944cdA1e555754a830680F6E', 18, 'XBT', 'Babylon Token'),
+      new Token(ChainId.MAINNET, '0xBD8ae8c42076FbEa34350D3dA56E6edb4170e5cF', 18, 'XBT', 'Babylon Token'),
       new Token(ChainId.MAINNET, '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c', 18, 'BNB', 'BNB')
     ],
     // [BUSD, USDT],

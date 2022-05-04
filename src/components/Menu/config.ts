@@ -31,11 +31,6 @@ const config: MenuEntry[] = [
     icon: 'HamburgerIcon',
     href: '/MiningBank'
   },
-  {
-    label: 'Evengalist',
-    icon: 'PoolIcon',
-    href: '/Evengalist'
-  },
   // {
   //   label: 'Roulette',
   //   icon: 'TicketIcon',
