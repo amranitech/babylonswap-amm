@@ -15,6 +15,7 @@ const MiningMain = styled.div`
     z-index: 5;
     border-radius: 20px;
     border:1px solid #D0B49F;
+    text-align: center;
 `
 
 const TokenInfo = styled.div`
@@ -138,7 +139,7 @@ const MiningBank = () => {
             <div style={{ textAlign: "center", fontSize: "25px", marginBottom: "20px" }}>Mining Bank</div>
             <div style={{ display: "flex" }}>
                 <TokenInfo >
-                    <Header>Select a Token</Header>
+                    <Header>Enter Token Contract Address</Header>
                     <Input value={rewardAddress} onChange={(e) => { setRewardAddress(e.target.value) }} />
                     <Button onClick={handleClaimOne}>Claim</Button>
                 </TokenInfo>
