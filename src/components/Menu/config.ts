@@ -28,8 +28,13 @@ const config: MenuEntry[] = [
   },
   {
     label: 'Mining bank',
-    icon: 'HamburgerIcon',
+    icon: 'InfoIcon',
     href: '/MiningBank'
+  },
+  {
+    label: 'Glossary',
+    icon: 'AuditIcon',
+    href: 'https://babylonswap.gitbook.io/babylonswap/'
   },
   // {
   //   label: 'Roulette',
