@@ -10,7 +10,8 @@ const MiningMain = styled.div`
     position:relative;
     background-color:#090805;
     color:white;
-    min-width: 600px;
+    min-width: 400px;
+    width: 40%;
     z-index: 5;
     border-radius: 20px;
     border:1px solid #D0B49F;
@@ -18,7 +19,7 @@ const MiningMain = styled.div`
 
 const TokenInfo = styled.div`
   padding:30px;
-  width:70%;
+  width:100%;
   border:1px solid #D0B49F;
 `
 const Header = styled.div`
@@ -80,7 +81,7 @@ const ClaimButton = styled.button`
 
 const Button = styled.button`
   margin:auto;
-  margin-right:0px;
+  margin-left:10px;
   padding:8px 17px;
   border-radius:10px;
   cursor:pointer;
@@ -140,12 +141,12 @@ const MiningBank = () => {
                     <Header>Select a Token</Header>
                     <Input value={rewardAddress} onChange={(e) => { setRewardAddress(e.target.value) }} />
                     <Button onClick={handleClaimOne}>Claim</Button>
-
-                    {/* <div style={{ display: "flex" }}>
+                </TokenInfo>
+                {/* <div style={{ display: "flex" }}>
                         <div style={{ width: "70%" }}>Token Name</div>
                         <div>Amount</div>
                     </div> */}
-                    {/* <ListView>
+                {/* <ListView>
                         <Item>
                             <TokenName>USDT</TokenName>
                             <div>100</div>
@@ -171,8 +172,7 @@ const MiningBank = () => {
                             <div>100</div>
                         </Item>
                     </ListView> */}
-                    <ClaimButton onClick={handleClaim}>Claim All</ClaimButton>
-                </TokenInfo>
+                {/* <ClaimButton onClick={handleClaim}>Claim All</ClaimButton> */}
 
             </div>
         </MiningMain >
