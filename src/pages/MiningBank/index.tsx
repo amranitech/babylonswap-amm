@@ -139,7 +139,7 @@ const MiningBank = () => {
             <div style={{ textAlign: "center", fontSize: "25px", marginBottom: "20px" }}>Mining Bank</div>
             <div style={{ display: "flex" }}>
                 <TokenInfo >
-                    <Header>Enter LP Token Contract Address</Header>
+                    <Header>Enter Token Contract Address</Header>
                     <Input value={rewardAddress} onChange={(e) => { setRewardAddress(e.target.value) }} />
                     <Button onClick={handleClaimOne}>Claim</Button>
                 </TokenInfo>
