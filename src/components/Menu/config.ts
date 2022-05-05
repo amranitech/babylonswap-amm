@@ -24,7 +24,7 @@ const config: MenuEntry[] = [
   {
     label: 'Farming',
     icon: 'FarmIcon',
-    href: 'http://localhost:3001/farms'
+    href: 'https://farm.babylonswap.finance/farms'
   },
   {
     label: 'Mining bank',
