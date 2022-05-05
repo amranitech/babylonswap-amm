@@ -16,7 +16,7 @@
         {
             "name": "Babylon Token",
             "symbol": "XBT",
-            "address": "0xBD8ae8c42076FbEa34350D3dA56E6edb4170e5cF",
+            "address": "0x3853d7D774eE44698d539365F6E8446b57F2CaCd",
             "chainId": 56,
             "decimals": 18,
             "logoURI": "/images/coins/Babylon.png"

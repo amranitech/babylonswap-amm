@@ -10,7 +10,7 @@ import CoinLogo from "../pancake/CoinLogo"
 
 const getTokenLogoURL = (address: string) => {
     console.log("getTokenLogoURL", address);
-    if (address === "0xBD8ae8c42076FbEa34350D3dA56E6edb4170e5cF") {
+    if (address === "0x3853d7D774eE44698d539365F6E8446b57F2CaCd") {
         return `./images/coins/Babylon.png`
     }
     return `https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/${address}/logo.png`
