@@ -80,7 +80,7 @@ export default function PoolFinder() {
       <CardNav activeIndex={1} />
       <AppBody>
         <FindPoolTabs />
-        <CardBody style = {{backgroundColor:"white"}}>
+        <CardBody >
           <AutoColumn gap="md">
             <Button
               onClick={() => {
