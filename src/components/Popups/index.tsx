@@ -27,6 +27,7 @@ const MobilePopupInner = styled.div`
   ::-webkit-scrollbar {
     display: none;
   }
+  z-index: 8;
 `
 
 const FixedPopupColumn = styled(AutoColumn)`
@@ -35,7 +36,7 @@ const FixedPopupColumn = styled(AutoColumn)`
   right: 1rem;
   max-width: 355px !important;
   width: 100%;
-  z-index: 2;
+  z-index: 8;
 
   ${({ theme }) => theme.mediaQueries.sm} {
     display: none;
