@@ -3,10 +3,10 @@ import { AbstractConnector } from '@web3-react/abstract-connector'
 
 import { injected, walletconnect } from '../connectors'
 // TODO
-export const ROUTER_ADDRESS = '0x9fD8b224B8e4f34c6eef4643c22669F1bEe3006C'
+export const ROUTER_ADDRESS = '0x989e555316F2cEF1949d782Fd875995F83b65FA0'
 export const EVANGALIST_ADDRESS = '0x98AfadCD618cB31664fa70F900ae3255eEc5B167'
 export const ROULETTE_ADDRESS = '0x6Ff62980E0D2457D2AdCf66dD3FdCf302f7E69A7'
-export const MINEBANK_ADDRESS = '0xf6b25a4F06e03e3d9DbE7aA3CB31B9840127B4F6'
+export const MINEBANK_ADDRESS = '0xFaeeB70613A8809fFAC569665c337dBf8Ec6C852'
 
 // a list of tokens by chain
 type ChainTokenList = {
@@ -56,7 +56,7 @@ export const BASES_TO_TRACK_LIQUIDITY_FOR: ChainTokenList = {
 export const PINNED_PAIRS: { readonly [chainId in ChainId]?: [Token, Token][] } = {
   [ChainId.MAINNET]: [
     [
-      new Token(ChainId.MAINNET, '0x5BbD197EeCfECB05a07909020a524bfb155c4E2a', 18, 'XBT', 'Babylon Token'),
+      new Token(ChainId.MAINNET, '0xe329102DA0E7E135656CD72CDc983c81f27CB5B6', 18, 'XBT', 'Babylon Token'),
       new Token(ChainId.MAINNET, '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c', 18, 'BNB', 'BNB')
     ],
     // [BUSD, USDT],
