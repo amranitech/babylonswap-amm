@@ -27,6 +27,11 @@ const config: MenuEntry[] = [
     href: 'https://farm.babylonswap.finance/farms'
   },
   {
+    label: 'Gaming',
+    icon: 'TicketIcon',
+    href: 'https://game.babylonswap.finance'
+  },
+  {
     label: 'Mining bank',
     icon: 'InfoIcon',
     href: '/MiningBank'
