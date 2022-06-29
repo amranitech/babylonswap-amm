@@ -12,6 +12,7 @@ import {
 } from './AddLiquidity/redirects'
 import RemoveV1Exchange from './MigrateV1/RemoveV1Exchange'
 import Pool from './Pool'
+import Video from './Video/index'
 import PoolFinder from './PoolFinder'
 // import Farm from './Farm'
 import RemoveLiquidity from './RemoveLiquidity'
@@ -123,6 +124,7 @@ export default function App() {
                   <Popups />
                   <Web3ReactManager>
                     <Switch>
+                      <Route exact strict path='/home' component={Video} />
                       <Route exact strict path='/swap' component={Swap} />
                       <Route exact strict path='/swap/:outputCurrency' component={RedirectToSwap} />
                       <Route exact strict path='/send' component={RedirectPathToSwapOnly} />
@@ -138,7 +140,7 @@ export default function App() {
                       <Route exact path="/MiningBank" component={MiningBank} />
                       <Route exact path="/Evengalist" component={Evengalist} />
                       {/* <Route exact path="/Loulette" component={Loulette} /> */}
-                      <Route component={RedirectPathToSwapOnly} />
+                      <Route component={Video} />
                     </Switch>
                   </Web3ReactManager>
                   <Marginer />
