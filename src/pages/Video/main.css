@@ -2,8 +2,33 @@
     width: 100%;
     height: 100%;
     display: flex;
+    margin: auto;
 }
 
-.vpfr_container {
+.main {
+    display: flex;
     margin: auto;
+    width: 768px !important;
+    height: 432px !important;
+}
+
+.tel {
+    position: absolute;
+    bottom: 5%;
+    display: flex;
+    width: 100%;
+    color: white;
+    font-size: 25px;
+    transition: all 0.3s;
+}
+
+.tel:hover {
+    transform: scale(1.2, 1.2);
+}
+
+@media screen and (max-width:800px) {
+    .main {
+        width: 100% !important;
+        height: 100% !important;
+    }
 }

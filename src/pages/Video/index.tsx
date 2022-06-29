@@ -1,18 +1,15 @@
 import React from "react";
 import "./main.css";
-import { ReactVideoPlayer } from 'video-player-for-react'
-import 'video-player-for-react/dist/index.css'
 import { Link } from "react-router-dom";
+import ReactPlayer from 'react-player'
 
 const Video = () => {
     return (
         <div className="video">
-            <ReactVideoPlayer
-                width='928px'
-                url="./video.mp4"
-                type='video/mp4'
-            />
-            <a href="https://t.me/BabylonSwap">Telegram</a>
+            <ReactPlayer controls playing url='./video.mp4' className="main" />
+            <div className="tel">
+                <a style={{ margin: "auto" }} href="https://t.me/BabylonSwap">Join us On Telegram</a>
+            </div>
         </div>
     );
 }
