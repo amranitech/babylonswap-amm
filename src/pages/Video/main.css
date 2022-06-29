@@ -19,10 +19,19 @@
     width: 100%;
     color: white;
     font-size: 25px;
-    transition: all 0.3s;
 }
 
-.tel:hover {
+.tel-btn {
+    margin: auto;
+    padding: 15px;
+    border: 2px solid #D0B49F;
+    background-color: black;
+    border-radius: 50px;
+    transition: all 0.3s;
+    color: #D0B49F;
+}
+
+.tel-btn:hover {
     transform: scale(1.2, 1.2);
 }
 

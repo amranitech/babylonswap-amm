@@ -8,7 +8,7 @@ const Video = () => {
         <div className="video">
             <ReactPlayer controls playing url='./video.mp4' className="main" />
             <div className="tel">
-                <a style={{ margin: "auto" }} href="https://t.me/BabylonSwap">Join us On Telegram</a>
+                <a className="tel-btn" href="https://t.me/BabylonSwap">Join us On Telegram</a>
             </div>
         </div>
     );
