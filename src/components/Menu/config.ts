@@ -103,4 +103,4 @@ const config: MenuEntry[] = [
   // },
 ]
 
-export default config
+export default config;
