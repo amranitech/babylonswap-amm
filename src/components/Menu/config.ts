@@ -27,11 +27,6 @@ const config: MenuEntry[] = [
     href: 'https://farm.babylonswap.org'
   },
   {
-    label: 'XBT Price',
-    icon: 'InfoIcon',
-    href: 'https://apy.babylonswap.org'
-  },
-  {
     label: 'Mining Bank',
     icon: 'TicketIcon',
     href: '/MiningBank'
