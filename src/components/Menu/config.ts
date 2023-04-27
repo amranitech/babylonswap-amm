@@ -24,22 +24,22 @@ const config: MenuEntry[] = [
   {
     label: 'Farming',
     icon: 'FarmIcon',
-    href: 'https://farm.babylonswap.finance/farms'
+    href: 'https://farm.babylonswap.org'
+  },
+  {
+    label: 'XBT Price',
+    icon: 'InfoIcon',
+    href: 'https://apy.babylonswap.org'
   },
   {
     label: 'Mining Bank',
-    icon: 'InfoIcon',
+    icon: 'TicketIcon',
     href: '/MiningBank'
   },
   {
     label: 'Glossary',
     icon: 'AuditIcon',
-    href: 'https://babylonswap.gitbook.io/babylonswap/'
-  },
-  {
-    label: 'P2P Casino',
-    icon: 'TicketIcon',
-    href: 'https://game.babylonswap.finance'
+    href: 'https://babylonswap.gitbook.io/'
   },
   // {
   //   label: 'Roulette',
