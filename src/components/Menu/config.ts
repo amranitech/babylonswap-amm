@@ -27,11 +27,6 @@ const config: MenuEntry[] = [
     href: 'https://farm.babylonswap.org'
   },
   {
-    label: 'XBT Price',
-    icon: 'InfoIcon',
-    href: 'https://apy.babylonswap.org'
-  },
-  {
     label: 'Mining Bank',
     icon: 'TicketIcon',
     href: '/MiningBank'
@@ -40,6 +35,11 @@ const config: MenuEntry[] = [
     label: 'Glossary',
     icon: 'AuditIcon',
     href: 'https://babylonswap.gitbook.io/'
+  },
+  {
+    label: 'XBT Price',
+    icon: 'InfoIcon',
+    href: 'https://apy.babylonswap.org'
   },
   // {
   //   label: 'Roulette',
