@@ -39,7 +39,7 @@ const config: MenuEntry[] = [
   {
     label: 'Viral Marketing',
     icon: 'MoreIcon',
-    href: 'https://viral.babylonswap.org'
+    href: 'https://lllpg.com/b4vmkpvg'
   },
   {
     label: 'Glossary',
