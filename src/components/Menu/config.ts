@@ -32,14 +32,19 @@ const config: MenuEntry[] = [
     href: '/MiningBank'
   },
   {
-    label: 'Glossary',
-    icon: 'AuditIcon',
-    href: 'https://babylonswap.gitbook.io/'
-  },
-  {
     label: 'XBT Price',
     icon: 'InfoIcon',
     href: 'https://apy.babylonswap.org'
+  },
+  {
+    label: 'Viral Marketing',
+    icon: 'MoreIcon',
+    href: 'https://viral.babylonswap.org'
+  },
+  {
+    label: 'Glossary',
+    icon: 'AuditIcon',
+    href: 'https://babylonswap.gitbook.io/'
   },
   // {
   //   label: 'Roulette',
