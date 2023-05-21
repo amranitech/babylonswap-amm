@@ -28,6 +28,14 @@
             "chainId": 56,
             "decimals": 18,
             "logoURI": "/images/coins/BUSD.png"
+        },
+          {
+            "name": "Seek Token",
+            "symbol": "SEEK",
+            "address": "0xd76Bd08CB413030216ACf3190C20AE3a6888195B",
+            "chainId": 56,
+            "decimals": 18,
+            "logoURI": "/images/coins/SEEK.png"
         }
     ]
 }
