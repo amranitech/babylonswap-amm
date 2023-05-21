@@ -39,7 +39,7 @@ const config: MenuEntry[] = [
   {
     label: 'Viral Marketing',
     icon: 'MoreIcon',
-    href: 'https://lllpg.com/b4vmkpvg'
+    href: 'https://lllpg.com/kww5tnmb'
   },
   {
     label: 'Glossary',
