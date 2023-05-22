@@ -7,7 +7,7 @@ const config: MenuEntry[] = [
   //   href: '/'
   // },
   {
-    label: 'Trade',
+    label: 'Trade On BNB',
     icon: 'TradeIcon',
     initialOpenState: true,
     items: [
@@ -22,12 +22,12 @@ const config: MenuEntry[] = [
     ]
   },
   {
-    label: 'Farming',
+    label: 'Farm On BNB',
     icon: 'FarmIcon',
     href: 'https://farm.babylonswap.org'
   },
   {
-    label: 'Mining Bank',
+    label: 'BNB Mining Bank',
     icon: 'TicketIcon',
     href: '/MiningBank'
   },
