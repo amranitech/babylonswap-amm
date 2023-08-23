@@ -37,7 +37,7 @@ const config: MenuEntry[] = [
     href: 'https://apy.babylonswap.org'
   },
   {
-    label: 'Viral Marketing',
+    label: 'The Iceberg',
     icon: 'MoreIcon',
     href: 'https://lllpg.com/kww5tnmb'
   },
