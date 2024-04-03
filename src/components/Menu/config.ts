@@ -32,6 +32,11 @@ const config: MenuEntry[] = [
     href: '/MiningBank'
   },
   {
+    label: 'V2 Market',
+    icon: 'MoreIcon',
+    href: 'https://v2.babylonswap.org'
+  },
+  {
     label: 'XBT Price',
     icon: 'InfoIcon',
     href: 'https://apy.babylonswap.org'
