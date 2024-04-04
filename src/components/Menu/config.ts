@@ -33,13 +33,8 @@ const config: MenuEntry[] = [
   },
   {
     label: 'V2 Market',
-    icon: 'MoreIcon',
-    href: 'https://v2.babylonswap.org'
-  },
-  {
-    label: 'XBT Price',
     icon: 'InfoIcon',
-    href: 'https://apy.babylonswap.org'
+    href: 'https://v2.babylonswap.org'
   },
   {
     label: 'Glossary',
