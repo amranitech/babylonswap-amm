@@ -3,6 +3,7 @@ import "./main.css";
 import { Link } from "react-router-dom";
 import ReactPlayer from 'react-player'
 
+<script src="https://askelliebots.blob.core.windows.net/askelliefiles/widget-integration-233.js"></script>
 const Video = () => {
     return (
         <div className="video">
