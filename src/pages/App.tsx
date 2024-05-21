@@ -120,7 +120,6 @@ export default function App() {
           >
             <TranslationsContext.Provider value={{ translations, setTranslations }}>
               <Menu>
-                <script src="https://askelliebots.blob.core.windows.net/askelliefiles/widget-integration-233.js"></script>
                 <BodyWrapper>
                   <Popups />
                   <Web3ReactManager>
