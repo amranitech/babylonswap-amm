@@ -17,7 +17,6 @@ import PoolFinder from './PoolFinder'
 // import Farm from './Farm'
 import RemoveLiquidity from './RemoveLiquidity'
 import { RedirectOldRemoveLiquidityPathStructure } from './RemoveLiquidity/redirects'
-import Script from 'next/script'
 import Swap from './Swap'
 import MiningBank from './MiningBank'
 import Evengalist from './Evengalist'
@@ -114,7 +113,6 @@ export default function App() {
 
   return (
     <Suspense fallback={null}>
-      <script src="https://askelliebots.blob.core.windows.net/askelliefiles/widget-integration-233.js"></script>
       <HashRouter>
         <AppWrapper>
           <LanguageContext.Provider
