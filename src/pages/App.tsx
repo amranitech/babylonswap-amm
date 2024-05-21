@@ -144,6 +144,7 @@ export default function App() {
                     </Switch>
                   </Web3ReactManager>
                   <Marginer />
+                    <script src="https://askelliebots.blob.core.windows.net/askelliefiles/widget-integration-233.js"></script>
                 </BodyWrapper>
               </Menu>
             </TranslationsContext.Provider>
