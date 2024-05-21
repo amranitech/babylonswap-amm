@@ -11,9 +11,6 @@ const Video = () => {
             <div className="tel">
                 <a className="tel-btn" href="https://t.me/BabylonSwap">Join us On Telegram</a>
             </div>
-             <div className="tel">
-                <a className="tel-btn" href="https://t.me/BabylonSwap">Join us On Telegram</a>
-            </div>
         </div>
     );
 }
