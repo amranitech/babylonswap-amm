@@ -21,14 +21,6 @@
             "decimals": 18,
             "logoURI": "/images/coins/Babylon.png"
         },
-          {
-            "name": "TrumpUp",
-            "symbol": "TRUMPUP",
-            "address": "0xC2574690a899CAe3cd386F057Cf6864adC81BE34",
-            "chainId": 56,
-            "decimals": 18,
-            "logoURI": "/images/coins/FRIES.png"
-        },
         {
             "name": "BUSD Token",
             "symbol": "BUSD",
