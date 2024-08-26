@@ -41,6 +41,16 @@ const config: MenuEntry[] = [
     icon: 'InfoIcon',
     href: 'https://apy.babylonswap.org'
   },
+    {
+    label: 'TrumpUp Trading',
+    icon: 'InfoIcon',
+    href: 'https://trump.babylonswap.org'
+  },
+    {
+    label: 'TRUMPUP Price',
+    icon: 'InfoIcon',
+    href: 'https://dexscreener.com/bsc/0x7E8267AB9d82F007376431C8D97F1D7b34E27f36'
+  },
   {
     label: 'Glossary',
     icon: 'AuditIcon',
